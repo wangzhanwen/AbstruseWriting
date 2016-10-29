@@ -1,0 +1,31 @@
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+build/
+.gradle/
+local.properties
+bin/
+grn/
+
+# JNI compile files
+*.o
+*.o.d
+
+# OS autogen folder information
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.bak
+*.tmp
+*.temp
+*.swp
+*.*~
+~*.*
+
+
+
+
