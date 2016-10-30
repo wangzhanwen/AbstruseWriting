@@ -1,11 +1,37 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorForeground">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@color/abc_primary_text_disable_only_material_dark
+        </item>
+        <item name="android:textColorSecondary">@color/abc_primary_text_disable_only_material_dark
+        </item>
+    </style>
+
+
+
+
+    <style name="radiobtn_sty">
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/rb_color_sel</item>
+        <item name="android:drawableTint">@color/rb_color_sel</item>
+        <item name="android:drawableTintMode">src_atop</item>
+
     </style>
 
 </resources>

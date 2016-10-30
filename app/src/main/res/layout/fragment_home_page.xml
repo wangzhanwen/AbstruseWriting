@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.daidai.abstrusewriting.homepage.communal.fragments.HomePageFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+          <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homwpage_appbar_bg">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/homepage_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="30dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#f00"
+                      android:textSize="20sp"
+                      android:text="天书"/>
+                  <TextView
+                      android:id="@+id/homepage_search"
+                      android:background="@drawable/search_bar_bg"
+                      android:layout_width="wrap_content"
+                      android:layout_height="30dp"
+                      android:gravity="center"
+                      android:layout_alignTop="@+id/homepage_history"
+                      android:textSize="15dp"
+                      android:layout_centerInParent="true"
+                      android:text="好声音 林志玲..."/>
+                  <TextView
+                      android:id="@+id/homepage_history"
+                      android:drawableTop="@mipmap/bg_myitem_alltime_new"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="10dp"
+                      android:layout_toLeftOf="@+id/homepage_download"
+                      android:textSize="12sp"
+                      android:text="历史"/>
+                  <TextView
+                      android:id="@+id/homepage_download"
+                      android:drawableTop="@mipmap/bg_myitem_transmit_new"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="10dp"
+                      android:layout_alignParentRight="true"
+                      android:textSize="12sp"
+                      android:text="下载"/>
+
+              </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/homepage_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TabLayout>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homepage_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
